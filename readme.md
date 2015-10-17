@@ -9,4 +9,8 @@ To run the code:
 4. Change to the directory that will contain your project. In the command line type `cd <directory>` (where `<directory>` is the directory which will contain the project)
 5. Clone the source code to your computer: `git clone https://github.com/jamesshore/how_to_tabs.git`
 6. Change to the project directory: `cd how_to_tabs`
-7. To run the build: `jake`
+
+To run the build:
+---
+1. Install jake: `npm install jake -g`
+2. Run jake: `jake`

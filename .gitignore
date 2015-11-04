@@ -1,5 +1,6 @@
 # WebStorm
 .idea/workspace.xml
+.idea/watcherTasks.xml
 
 # npm
 node_modules/**/.bin

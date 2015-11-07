@@ -24,13 +24,13 @@ WebStorm has options for using jslin/jshint/eslint. Check out how that works?
 JavaScript Gotchas
 ===
 
-1. Variable scoping
+1. Variable `scoping`
     - scope: variables and functions will be in global scope by default. Bad.
     - IFFE creates a scope isolated from blobal scope
 
 2. "use strict";
-    - in a IFFE ```var foo = "bar"``` creates a variable in the function scope
-    - however ```foo = bar``` (note the missing ```var```) will create the variable in the global scope. Ugh!
+    - in a IFFE `var foo = "bar"` creates a variable in the function scope
+    - however `foo = bar` (note the missing `var`) will create the variable in the global scope. Ugh!
     - "use strict" prevents this
 
 3. www.jshint.com/docs/options
@@ -41,18 +41,18 @@ Options can be
 
 Prefer starting with really strict. Easier to relax than to tighten later.
 
-- ```bitwise```: ```a && b``` vs. ```a & b```
+- `bitwise`: `a && b` vs. `a & b`
 
-- ```curly```: force curly braces. nope.
+- `curly`: force curly braces. nope.
 
-- ```eqeqeq```: true (type coercion sucks)
+- `eqeqeq`: true (type coercion sucks)
 
-- ```latedef```: good for variables, less so for functions. So ```nofunc```
+- `latedef`: good for variables, less so for functions. So `nofunc`
 
-- ```nonew```: ``` new Date()``` without using the object is bad.
+- `nonew`: `new Date()` without using the object is bad.
 
-- ```strict```: enforces ```use strict;```
+- `strict`: enforces `use strict;`
 
-- ```undef```:
+- `undef`:
 
 Check out this: [The Definitive Guide to Object-Oriented JavaScript](letscodejavascript.com/v3/episodes/lessons_learned/12) (25 min video)

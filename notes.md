@@ -15,3 +15,6 @@ Conclusion:
 - iffe
 - "use strict"
 - lint
+
+Explore:
+WebStorm has options for using jslin/jshint/eslint. Check out how that works?

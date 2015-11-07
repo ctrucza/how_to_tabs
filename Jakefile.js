@@ -16,6 +16,6 @@
         var expected_node_version = package_json.engines.node;
         let actual_node_version = process.version;
         if (semver.neq(actual_node_version, expected_node_version))
-            fail("Incorrect Node version: expected " + expected_node_version + " but was " + actual_node_version);
+            fail("Incorrect Node version: expected " + semver.clean(expected_node_version) + " but was " + semver.clean(actual_node_version));
     });
 }());

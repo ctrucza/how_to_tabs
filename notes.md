@@ -57,5 +57,5 @@ reliable, repeatable build
 
 # Loose ends
 
-Check out this: [The Definitive Guide to Object-Oriented JavaScript](letscodejavascript.com/v3/episodes/lessons_learned/12) (25 min video)
-Try out [Grunt](letscodejavascript.com/v3/eposides/lab/1)
+* [The Definitive Guide to Object-Oriented JavaScript](letscodejavascript.com/v3/episodes/lessons_learned/12) (25 min)
+* [The Great Grunt Shootout](letscodejavascript.com/v3/comments/lab/1) (29 min)

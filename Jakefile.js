@@ -16,6 +16,13 @@
     task("run", function(){
         jake.exec("node node_modules/http-server/bin/http-server src", {interactive:true}, complete);
     });
+
+    desc("Start the Karma server (run this first)");
+    task("karma", function(){
+       console.log("Starting Karma server:");
+    });
+
+
     //**** Supporting tasks
 
     desc("Check Node version");
@@ -36,7 +43,7 @@
         jshint.checkFiles({
             files: ["Jakefile.js", "src/**/*.js"],
             options: lintOptions(),
-            globals: lintGlobals(),
+            globals: lintGlobals()
         }, complete, fail);
 
     }, {async: true});

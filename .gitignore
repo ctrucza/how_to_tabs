@@ -1,6 +1,7 @@
 # WebStorm
 .idea/workspace.xml
 .idea/watcherTasks.xml
+.idea/dictionaries/
 
 # npm
 node_modules/**/.bin

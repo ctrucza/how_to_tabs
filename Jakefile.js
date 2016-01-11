@@ -63,7 +63,8 @@
             configFile: KARMA_CONFIG,
             expectedBrowsers:[
                 "Chrome 47.0.2526 (Windows 10 0.0.0)",
-                "Edge 13.10586.0 (Windows 10 0.0.0)"
+                "Edge 13.10586.0 (Windows 10 0.0.0)",
+                "Mobile Safari 9.0.0 (iOS 9.2.0)"
             ],
             strict: !process.env.loose
         }, complete, fail);

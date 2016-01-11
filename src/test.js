@@ -1,7 +1,13 @@
 (function () {
     "use strict";
 
-    var assert = require("chai").assert;
+    //var assert = require("chai").assert;
+
+    var assert = {
+        equal: function equal(actual, expected){
+            if (actual !== expected) throw new Error("expected " + expected + " but was " + actual);
+        }
+    }
 
     describe("Addition", function(){
         it("adds positive numbers", function(){

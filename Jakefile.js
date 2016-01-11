@@ -34,7 +34,6 @@
     task("clean", function(){
         console.log("Erase generated files");
         shell.rm("-rf", "generated");
-
     });
 
     //**** Supporting tasks
@@ -66,7 +65,6 @@
     task("test", function(){
        console.log("Testing JavaScript:");
 
-
         karma.run({
             configFile: KARMA_CONFIG,
             expectedBrowsers:[
@@ -81,6 +79,9 @@
     desc("Build distribution directory");
     task("build", [DIST_DIR], function(){
         console.log("Building distribution directory");
+
+        shell.rm("-rf", DIST_DIR+"/*");
+        shell.cp("src/index.html", DIST_DIR);
     });
 
     directory(DIST_DIR);

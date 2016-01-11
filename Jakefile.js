@@ -34,7 +34,7 @@
         console.log("Linting JavaScript");
 
         jshint.checkFiles({
-            files: "Jakefile.js",
+            files: ["Jakefile.js", "src/**/*.js"],
             options: {
                 bitwise: true,
                 eqeqeq: true,

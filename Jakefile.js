@@ -1,4 +1,4 @@
-/* globals jake:false, desc:false, task:false, complete:false, fail:false */
+/* globals jake:false, desc:false, task:false, complete:false, fail:false, directory: false */
 
 (function (){
     "use strict";
@@ -27,8 +27,11 @@
 
     desc("Run a local server");
     task("run", ["build"], function(){
-        jake.exec("node node_modules/http-server/bin/http-server " + DIST_DIR, {interactive:true}, complete);
-    });
+        jake.exec(
+            "node node_modules/http-server/bin/http-server " + DIST_DIR,
+            {interactive:true},
+            complete);
+    }, {asyc:true} );
 
     desc("Erase all generated files");
     task("clean", function(){

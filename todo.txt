@@ -2,3 +2,4 @@
 * hide content for inactive tabs
     * hide one inactive content div
         * hide one content div
+            * has an api

@@ -5,4 +5,8 @@
         return a + b;
     };
 
+    exports.subtract = function substract(a, b){
+        return a - b;
+    };
+
 }());

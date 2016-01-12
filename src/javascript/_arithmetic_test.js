@@ -6,12 +6,17 @@
     describe("Something", function(){
 
         it("does something", function(){
-            //assert.equal(arithmetic.add(3, 4), 7);
             var div = document.createElement("div");
 
             div.innerHTML = "This is an example";
 
             document.body.appendChild(div);
+
+            var p = document.createElement("p");
+            p.innerHTML = "Some long paragraph";
+            div.appendChild(p);
+
+            div.parentNode.removeChild(div);
         });
 
     });

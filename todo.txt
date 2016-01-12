@@ -1,2 +1,0 @@
-* rename addition.js to arithmetic.js
-* rename addition in _addition_test.js

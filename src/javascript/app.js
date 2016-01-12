@@ -1,8 +1,8 @@
 (function () {
     "use strict";
 
-    var addition = require("./addition.js");
+    var arithmetic = require("./arithmetic.js");
 
     console.log("Hello");
-    console.log("40+2=" + addition.add(40,2));
+    console.log("40+2=" + arithmetic.add(40,2));
 }());

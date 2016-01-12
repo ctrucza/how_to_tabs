@@ -2,13 +2,6 @@
     "use strict";
 
     var assert = require("./assert.js");
-
-    //var assert = {
-    //    equal: function equal(actual, expected){
-    //        if (actual !== expected) throw new Error("expected " + expected + " but was " + actual);
-    //    }
-    //};
-
     var addition = require("./addition.js");
 
     describe("Addition", function(){

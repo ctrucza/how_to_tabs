@@ -6,7 +6,7 @@
 
     describe("Tabs", function(){
 
-        it("hides an element", function(){
+        it("sets a class on an element", function(){
             var element = addElement("div");
             tabs.initialize(element, "someClass");
             assert.equal(getClass(element), "someClass");

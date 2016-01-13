@@ -12,6 +12,14 @@
             assert.equal(getClass(element), "someClass");
             removeElement(element);
         });
+        
+        it("sets a class without removing existing classes", function(){
+           var element = addElement("div");
+           element.setAttribute("class", "existingClass");
+           tabs.initialize(element, "newClass");
+           assert.equal(getClass(element), "existingClass newClass");
+           removeElement(element);
+        });
 
         function getClass(element){
             return element.getAttribute("class");
